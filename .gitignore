@@ -1,0 +1,14 @@
+# MATLAB
+*.mat
+*.fig
+
+# Output
+output/
+figures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data
+*.series
