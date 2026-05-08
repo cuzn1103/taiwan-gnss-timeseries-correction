@@ -1,6 +1,6 @@
-# GNSS Time-Series Modeling and Correction (Taiwan, 2011¡V2025)
+# GNSS Time-Series Modeling and Correction (Taiwan, 2011Â¡V2025)
 
-This repository provides MATLAB scripts for modeling continuous GNSS (cGNSS) time series using a standardized framework. The workflow reproduces the processing strategy used to generate the Taiwan GNSS dataset (2011¡V2025).
+This repository provides MATLAB scripts for modeling continuous GNSS (cGNSS) time series using a standardized framework. The workflow reproduces the processing strategy used to generate the Taiwan GNSS dataset (2011-2025).
 
 ---
 
@@ -25,11 +25,11 @@ The final processed GNSS products (e.g., corrected time series in `.neu` format,
 
 ## Repository Structure
 .
-¢u¢w¢w run_timeseries_modeling.m # Main script
-¢u¢w¢w functions/ # Core modeling functions
-¢u¢w¢w metadata/
-¢x ¢|¢w¢w events.csv # Event metadata
-¢|¢w¢w data/ # Example input (*.series)
+Â¢uÂ¢wÂ¢w run_timeseries_modeling.m # Main script
+Â¢uÂ¢wÂ¢w functions/ # Core modeling functions
+Â¢uÂ¢wÂ¢w metadata/
+Â¢x Â¢|Â¢wÂ¢w events.csv # Event metadata
+Â¢|Â¢wÂ¢w data/ # Example input (*.series)
 
 
 ---
@@ -81,10 +81,10 @@ Model Description
 The model is:
 
 y(t) = a + bt
-     + c cos(2£kt) + d sin(2£kt)
-     + e cos(4£kt) + f sin(4£kt)
-     + £U step functions (offsets, instrument, earthquakes)
-     + £U postseismic exponential terms (optional)
+     + c cos(2Â£kt) + d sin(2Â£kt)
+     + e cos(4Â£kt) + f sin(4Â£kt)
+     + Â£U step functions (offsets, instrument, earthquakes)
+     + Â£U postseismic exponential terms (optional)
 
 where:
 
@@ -95,11 +95,11 @@ Outlier Removal
 
 Outliers are defined as:
 
-|residual| > k ¡Ñ £m
+|residual| > k Â¡Ã‘ Â£m
 
 where:
 
-£m = sqrt(£U residual2 / N)
+Â£m = sqrt(Â£U residual2 / N)
 
 An epoch is removed if any component (E, N, or U) exceeds the threshold.
 
@@ -113,7 +113,7 @@ Citation
 
 If you use this code, please cite the associated dataset:
 
-Taiwan GNSS Dataset (2011¡V2025), Zenodo, DOI: XXXXX
+Taiwan GNSS Dataset (2011Â¡V2025), Zenodo, DOI: XXXXX
 
 License
 
