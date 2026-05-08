@@ -1,4 +1,4 @@
-# GNSS Time-Series Modeling and Correction (Taiwan, 2011¡V2025)
+# GNSS Time-Series Modeling and Correction (Taiwan, 2011-2025)
 
 This repository provides MATLAB scripts for modeling continuous GNSS (cGNSS) time series using a standardized framework. The workflow reproduces the processing strategy used to generate the Taiwan GNSS dataset (2011-2025).
 
