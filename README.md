@@ -51,13 +51,11 @@ time (decimal year), East, North, Up, sigmaE, sigmaN, sigmaU
 
 `metadata/events.csv` must contain:
 
-
 station,time,type
-
 
 where:
 - `time` is in decimal year
-- `type` ? {`offset`, `instrument`, `earthquake`}
+- `type` {`offset`, `instrument`, `earthquake`}
 
 ---
 
@@ -78,31 +76,6 @@ Optional Settings
 config.makeFigure = false;   % generate diagnostic plots
 Model Description
 
-The model is:
-
-y(t) = a + bt
-     + c cos(2£kt) + d sin(2£kt)
-     + e cos(4£kt) + f sin(4£kt)
-     + £U step functions (offsets, instrument, earthquakes)
-     + £U postseismic exponential terms (optional)
-
-where:
-
-a = offset
-b = linear velocity
-seasonal terms represent annual and semiannual signals
-Outlier Removal
-
-Outliers are defined as:
-
-|residual| > k ¡Ñ £m
-
-where:
-
-£m = sqrt(£U residual2 / N)
-
-An epoch is removed if any component (E, N, or U) exceeds the threshold.
-
 The standard deviation of residuals (SDR), used as a key quality metric in this study, is computed directly from the residuals of the time-series model after outlier removal. 
 This calculation is implemented within the modeling scripts provided in this repository.
 
@@ -113,7 +86,7 @@ Citation
 
 If you use this code, please cite the associated dataset:
 
-Taiwan GNSS Dataset (2011¡V2025), Zenodo, DOI: XXXXX
+Taiwan GNSS Dataset (2010-2024), Zenodo, DOI: 10.5281/zenodo.20047819
 
 License
 
