@@ -25,21 +25,17 @@ The final processed GNSS products (e.g., corrected time series in `.enu` format,
 
 ## Repository Structure
 
-run_timeseries_modeling.m # Main script
-functions/ # Core modeling functions
-metadata/events.csv # Event metadata
-data/ # Example input (*.series)
-
+- run_timeseries_modeling.m # Main script
+- functions/ # Core modeling functions
+- metadata/events.csv # Event metadata
+- data/ # Example input (*.series)
 
 ---
 
 ## Input Data Format
 
 The scripts expect GNSS time series in `.series` format:
-
-
 time (decimal year), East, North, Up, sigmaE, sigmaN, sigmaU
-
 
 - Time must be in decimal year
 - Units can be meters or millimeters (controlled by `config.positionScale`)
