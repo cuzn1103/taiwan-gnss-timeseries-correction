@@ -19,17 +19,16 @@ The scripts implement a time-series model including:
 
 This repository provides **modeling and processing scripts only**.
 
-The final processed GNSS products (e.g., corrected time series in `.neu` format, velocity fields, and coseismic displacements) are available in the Zenodo dataset associated with this study.
+The final processed GNSS products (e.g., corrected time series in `.enu` format, velocity fields, and coseismic displacements) are available in the Zenodo dataset associated with this study.
 
 ---
 
 ## Repository Structure
-.
-¢u¢w¢w run_timeseries_modeling.m # Main script
-¢u¢w¢w functions/ # Core modeling functions
-¢u¢w¢w metadata/
-¢x ¢|¢w¢w events.csv # Event metadata
-¢|¢w¢w data/ # Example input (*.series)
+
+run_timeseries_modeling.m # Main script
+functions/ # Core modeling functions
+metadata/events.csv # Event metadata
+data/ # Example input (*.series)
 
 
 ---
